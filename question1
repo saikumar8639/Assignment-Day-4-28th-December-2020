@@ -1,0 +1,8 @@
+QUESTION  1
+
+  In the Binary Search algorithm, it is suggested to calculate the mid as beg + (end - beg) / 2 instead of (beg + end) / 2. Why is it so?
+  
+  ans :
+      In general case the both expressions are invalid. For example the first expression is invalid because there is no such operation as + 
+      for pointers or iterators. The second expression is invalid in case when non-random access iterators are used. For example when
+      bidirectional iterators are used.
